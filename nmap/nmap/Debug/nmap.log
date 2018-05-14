@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  nmap.cpp
+  icmphd.cpp
+  正在生成代码...
+c:\users\liaoz\desktop\nmap\nmap\nmap.cpp(102): warning C4715: “ipstr_to_numeric”: 不是所有的控件路径都返回值
+  nmap.vcxproj -> C:\Users\liaoz\Desktop\nmap\Debug\nmap.exe
