@@ -13,7 +13,7 @@ computerMAC = '80:A5:89:29:B3:91'
 # 	/ ARP(computerMAC, oneplusIP, hwdst=netgateMAC, pdst=netgateIP, op=2)
 # sendp(pkt0, inter=2, iface='eth0')
 
-lan = '192.168.1.0/24'
+lan = '113.54.193.0/24'
  
 ans, unans = srp(Ether(dst="FF:FF:FF:FF:FF:FF")/ARP(pdst=lan), timeout=5)
 for snd, rcv in ans:
