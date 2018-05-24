@@ -17,11 +17,11 @@ _pwd  = "liaozhou1998"
 _to   = "liaozhou98@kindle.cn"
 
 _url = 'https://theeconomist.ctfile.com/dir/15138480-24778641-46296f/'
-_files = ['20180414.mobi','20180421.mobi','20180428.mobi']
+_files = ['20180505.mobi','20180512.mobi','20180519.mobi']
 
 def get_book(url, file):
 	options = webdriver.ChromeOptions()
-	prefs = {'profile.default_content_settings.popups': 0, 'download.default_directory': 'C:/Users/liaoz/Desktop/The Economist/'}
+	prefs = {'profile.default_content_settings.popups': 0, 'download.default_directory': 'C:/Users/liaoz/Desktop/GitHub/Others/Others/The Economist/'}
 	options.add_experimental_option('prefs', prefs)
 
 	# driver = PhantomJS()
