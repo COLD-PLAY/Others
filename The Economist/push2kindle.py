@@ -17,7 +17,7 @@ _pwd  = "liaozhou1998"
 _to   = "liaozhou98@kindle.cn"
 
 _url = 'https://theeconomist.ctfile.com/dir/15138480-24778641-46296f/'
-_files = ['20180505.mobi','20180512.mobi','20180519.mobi']
+_files = ['20180505.mobi','20180512.mobi','20180519.mobi', '20180526.mobi']
 
 def get_book(url, file):
 	options = webdriver.ChromeOptions()
@@ -57,8 +57,13 @@ def send_email(filename):
 
 def main():
 	for _file in _files:
-		get_book(_url, _file)
-		send_email(_file)
+		if os.path.exists(_file):
+			pass
+		else:
+			get_book(_url, _file)
+			send_email(_file)
 
 if __name__ == '__main__':
-	main()
+	# main()
+	for _file in _files:
+		send_email(_file)
